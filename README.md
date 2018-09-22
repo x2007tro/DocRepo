@@ -2,7 +2,22 @@
 A repository for files
 
 ## Navigation Structure
-- Do
+- Doc Repo
   - Common Commands
+    - Windows
+    - Ubuntu
+    - Upload
+  - Instructions
+    - Shiny
+    - SqlServer
+    - Other
 
-- 
+## Function
+Common Commands
+  - Display common commands 
+  - Copy button
+  - A upload button for updating new commands
+
+Instructions
+  - Name of the file
+  - Download button
