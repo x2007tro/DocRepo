@@ -26,7 +26,6 @@ Instructions
 - require(shinythemes)
 - require(readxl)
 - require(dplyr)
-- require(data.table)
 - require(magrittr)
 - require(DT)
 - require(RColorBrewer)
