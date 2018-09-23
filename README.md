@@ -21,3 +21,12 @@ Common Commands
 Instructions
   - Name of the file
   - Download button
+
+## Packages required
+- require(shiny)
+- require(shinythemes)
+- require(readxl)
+- require(dplyr)
+- require(data.table)
+- require(magrittr)
+- require(DT)
