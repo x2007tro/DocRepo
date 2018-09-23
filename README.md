@@ -14,8 +14,7 @@ A repository for files
 
 ## Function
 Common Commands
-  - Display common commands 
-  - Copy button
+  - A table displaying all common commands
   - A upload button for updating new commands
 
 Instructions
