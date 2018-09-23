@@ -37,11 +37,11 @@ ParseOneTab <- function(fp, sht){
       } else {
         cmds <- list(
           #id = id,
-          category = curr_cat,
-          name = nm,
-          command = cmd,
-          comment = cmt,
-          reference = ref
+          Category = curr_cat,
+          Name = nm,
+          Command = cmd,
+          Comment = cmt,
+          Reference = ref
         )
       }
       

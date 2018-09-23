@@ -9,7 +9,7 @@
 ##
 # Shiny ui
 ##
-mainUI <- fluidPage(theme = shinythemes::shinytheme("united"),
+mainUI <- fluidPage(theme = shinythemes::shinytheme("simplex"),
   
   # css style
   tags$head(

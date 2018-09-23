@@ -36,7 +36,8 @@ output$cmd_tbset <- renderUI({
         fluidRow(
           column(
             12,
-            shypka.ddiv(tags$h3(class = "block_title", "Commands"), color = "green"),
+            #shypka.ddiv(tags$h3(class = "block_title", "Commands"), color = "green"),
+            tags$br(),
             DT::dataTableOutput(paste0("cmb_tbl", i))
           )
         )
@@ -57,17 +58,35 @@ observe({
   lapply(1:length(cmds), function(i){
     fs <- cmds[[i]]
     fs_tb <- dplyr::bind_rows(fs)
+    colnames(fs_tb)
     
     output[[paste0("cmb_tbl", i)]] <- DT::renderDataTable({
       DT::datatable(
         fs_tb,
         options = list(
-          pageLength = 10,
+          pageLength = 20,
           orderClasses = TRUE,
           searching = TRUE,
           paging = TRUE
+        ),
+        editable = FALSE,
+        selection = "none"
+      ) %>% 
+        DT::formatStyle(
+          'Category',
+          fontWeight = "bold",
+          color = "gray",
+          backgroundColor = DT::styleEqual(
+            unique(fs_tb$Category),
+            RColorBrewer::brewer.pal(n = length(unique(fs_tb$Category)), name = "Set3")
+          )
+        ) %>% 
+        DT::formatStyle(
+          'Command',
+          #fontWeight = "bold",
+          color = "white",       # crimson
+          backgroundColor = "#FA8072"
         )
-      )
     })
     
   })

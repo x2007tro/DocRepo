@@ -30,3 +30,4 @@ Instructions
 - require(data.table)
 - require(magrittr)
 - require(DT)
+- require(RColorBrewer)
