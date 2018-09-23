@@ -1,0 +1,15 @@
+# Cmake install
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:george-edison55/cmake-3.x
+sudo apt-get update
+sudo apt-get install cmake-3
+
+# Opencl install
+sudo apt install ocl-icd-libopencl1
+sudo apt install ocl-icd-opencl-dev
+
+# libboost install
+sudo apt install libboost-dev
+sudo apt install libboost-system-dev
+sudo apt install libboost-filesystem-dev
+

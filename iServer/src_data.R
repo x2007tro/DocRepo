@@ -1,6 +1,6 @@
 ##
 # Reactive source data
-cmds <- reactive({
+cmds_fb <- reactive({
   res <- ParseCmds(cmd_path, cmd_shts)
   return(res)
 })

@@ -1,0 +1,7 @@
+Guide for Nginx configuration
+
+1.\ Installation following Shiny-server guide
+2.\ rm /etc/nginx/sites-available/default
+3.\ cp /etc/nginx/sites-available/default /etc/nginx/sites-available/home
+4.\ start editing this home file
+5.\

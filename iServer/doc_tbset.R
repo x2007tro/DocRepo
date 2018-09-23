@@ -22,8 +22,8 @@ output$doc_tbset <- renderUI({
         fluidRow(
           column(
             12,
-            tags$div(class = "float_left", textInput(paste0("showdoc_", tab_name, j), value = basename(fs[j]), label = NULL)),
-            tags$div(class = "float_left", downloadButton(paste0("getdoc_", tab_name, j)))
+            tags$div(class = "float_left", textInput(paste0("showdoc_", tab_name, j), value = basename(fs[j]), label = NULL, width = "390px")),
+            tags$div(class = "float_left", downloadButton(class = "btn-primary", paste0("getdoc_", tab_name, j)))
           )
         )
         

@@ -29,9 +29,9 @@ body {
  */
 .float_left {
   float:left;
-  width:200px;
+  width:400px;
 }
 
-.title_block{
+.block_title {
   padding:5px;
 }
