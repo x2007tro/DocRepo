@@ -6,5 +6,5 @@ entry_wid_m <- "120px"
 entry_wid_l <- "250px"
 
 cmd_path <- "./input/Commands/CommonCommandList.xlsx"
-cmd_shts <- c("Windows", "Ubuntu")
+cmd_shts <- c("Windows", "Ubuntu", "Other")
 doc_path <- "./input/Documents/"
