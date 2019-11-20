@@ -69,7 +69,7 @@ observe({
           searching = TRUE,
           paging = TRUE
         ),
-        editable = FALSE,
+        #editable = FALSE,
         selection = "none"
       ) %>% 
         DT::formatStyle(
